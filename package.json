@@ -1,0 +1,17 @@
+{
+  "name": "synterra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unified semantic civilization repository for SYNTERRA",
+  "type": "module",
+  "scripts": {
+    "test:runtime": "tsx tests/core/testSynterraRuntime.ts",
+    "test:agent": "tsx tests/core/testSynterraAgent.ts",
+    "test:memory": "tsx tests/core/testMemoryUpdateEngine.ts",
+    "test:graph": "tsx tests/core/testCivilizationMemoryGraph.ts"
+  },
+  "devDependencies": {
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
