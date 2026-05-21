@@ -14,8 +14,8 @@ This document tracks synchronization and migration status between multilingual s
 | SYN-RUN-001 | ✅ | ✅ | SYNCED | LV |
 | SYN-AI-001 | ✅ | ✅ | SYNCED | LV |
 | SYN-MEM-001 | ✅ | ✅ | SYNCED | LV |
-| SYN-GOV-001 | ❌ | ❌ | NOT STARTED | LV |
-| SYN-ETH-001 | ❌ | ❌ | NOT STARTED | LV |
+| SYN-GOV-001 | ✅ | ✅ | SYNCED | LV |
+| SYN-ETH-001 | ✅ | ✅ | SYNCED | LV |
 | SYN-WORLD-001 | ❌ | ⚠️ | NEEDS LV | EN |
 | SYN-ZERO-001 | ❌ | ⚠️ | NEEDS LV | EN |
 | SYN-FRACTAL-001 | ❌ | ⚠️ | NEEDS LV | EN |
@@ -28,10 +28,10 @@ This document tracks synchronization and migration status between multilingual s
 # Current Progress
 
 ```text
-SYNCED: 4
+SYNCED: 6
 PARTIAL: 0
 NEEDS LV: 3
-NOT STARTED: 5
+NOT STARTED: 3
 ```
 
 ---
