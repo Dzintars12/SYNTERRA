@@ -9,12 +9,17 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "types": ["node"],
+    "jsx": "preserve",
+    "types": ["node", "react", "react-dom"],
     "noEmit": true
   },
   "include": [
     "src/**/*.ts",
-    "tests/**/*.ts"
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "next-env.d.ts"
   ],
   "exclude": [
     "node_modules",
