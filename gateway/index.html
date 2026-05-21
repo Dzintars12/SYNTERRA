@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SYNTERRA Gateway</title>
+<style>
+:root{--gold:#f5d38a;--gold-soft:#c9a36f;--gold-dim:#8f7651;}
+*{box-sizing:border-box}
+html,body{height:100%;}
+body{margin:0;min-height:100vh;background:#000;color:var(--gold);font-family:Inter,Segoe UI,Arial,sans-serif;overflow:hidden;}
+.screen{height:100vh;width:100%;display:none;align-items:center;justify-content:center;padding:18px 22px;position:relative;z-index:1;}
+.screen.active{display:flex;animation:fadeIn .7s ease both}
+.gateway-inner,.panel-inner{width:min(980px,94vw);text-align:center}
+.gateway-inner{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;}
+h1{margin:0;font-weight:600;font-size:clamp(38px,5.4vw,66px);letter-spacing:.16em;color:var(--gold);line-height:1;}
+.subtitle{color:var(--gold-soft);font-size:clamp(15px,1.7vw,21px);letter-spacing:.03em;margin:0;}
+button,.card{border:1px solid rgba(245,211,138,.30);background:rgba(0,0,0,.22);color:var(--gold);transition:.35s ease;}
+button{padding:15px 54px;font-size:15px;letter-spacing:.16em;cursor:pointer;}
+button:hover,.card:hover{background:rgba(245,211,138,.04);border-color:rgba(245,211,138,.55);box-shadow:0 0 12px rgba(245,211,138,.08);transform:translateY(-2px);}
+.lang{position:fixed;top:24px;right:28px;z-index:10;}
+.lang-button{padding:10px 16px;font-size:12px;letter-spacing:.18em;color:var(--gold-dim);border-color:rgba(245,211,138,.18);background:rgba(0,0,0,.35);}
+.lang-panel{display:none;position:absolute;top:48px;right:0;width:230px;padding:12px;border:1px solid rgba(245,211,138,.22);background:rgba(0,0,0,.92);}
+.lang-panel.active{display:block;animation:fadeIn .25s ease both}
+.lang-title{color:var(--gold-dim);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin:4px 4px 12px;text-align:left;}
+.lang-option{width:100%;padding:11px 12px;text-align:left;border:0;background:transparent;color:var(--gold-soft);font-size:14px;letter-spacing:.03em;}
+.panel-title{font-size:13px;letter-spacing:.32em;color:var(--gold-dim);margin-bottom:18px;text-transform:uppercase;}
+.panel-heading{font-size:clamp(34px,5vw,60px);letter-spacing:.16em;margin:0 0 44px;font-weight:400;}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.card{min-height:118px;display:flex;align-items:center;justify-content:center;border-radius:18px;cursor:pointer;padding:24px;color:#f4e1b3;letter-spacing:.12em;font-size:14px;text-transform:uppercase;}
+.back{margin-top:38px;padding:12px 24px;font-size:12px;color:var(--gold-dim);}
+.note{margin-top:26px;color:var(--gold-dim);font-size:13px;letter-spacing:.08em;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(max-width:800px){body{overflow:auto}.screen{height:auto;min-height:100vh;padding:28px 18px}.grid{grid-template-columns:repeat(2,1fr)}button{width:100%;max-width:280px}.lang{top:16px;right:16px}.lang-panel{width:220px}}
+</style>
+</head>
+<body>
+<div class="lang">
+  <button class="lang-button" onclick="toggleLanguagePanel()" id="languageButton">LANGUAGE · EN</button>
+  <div class="lang-panel" id="languagePanel">
+    <div class="lang-title" id="languageTitle">Select Language</div>
+    <button class="lang-option" onclick="setLanguage('en')">English</button>
+    <button class="lang-option" onclick="setLanguage('lv')">Latviešu</button>
+    <button class="lang-option" onclick="setLanguage('ru')">Русский</button>
+  </div>
+</div>
+
+<section id="gateway" class="screen active">
+  <div class="gateway-inner">
+    <h1>◉SYNTERRA</h1>
+    <p class="subtitle" data-i18n="subtitle">Architecture of a Living Digital Civilization</p>
+    <button onclick="openScreen('domains')" data-i18n="enter">ENTER</button>
+  </div>
+</section>
+
+<section id="domains" class="screen">
+  <div class="panel-inner">
+    <div class="panel-title" data-i18n="mainDomains">Main Civilization Domains</div>
+    <h2 class="panel-heading" data-i18n="chooseWorld">Choose Your World</h2>
+    <div class="grid">
+      <div class="card" onclick="openScreen('finance')" data-i18n="finance">Finance</div>
+      <div class="card" data-i18n="ai">AI</div>
+      <div class="card" data-i18n="art">Art</div>
+      <div class="card" data-i18n="business">Business</div>
+      <div class="card" data-i18n="education">Education</div>
+      <div class="card" data-i18n="culture">Culture</div>
+      <div class="card" data-i18n="health">Health</div>
+      <div class="card" data-i18n="zeroBlock">Zero Block</div>
+    </div>
+    <p class="note" data-i18n="pathNote">First the world opens. Then the path becomes visible.</p>
+  </div>
+</section>
+
+<section id="finance" class="screen">
+  <div class="panel-inner">
+    <div class="panel-title" data-i18n="financeWorld">Finance World</div>
+    <h2 class="panel-heading" data-i18n="financeUpper">FINANCE</h2>
+    <div class="grid">
+      <div class="card" onclick="openScreen('xblock')" data-i18n="xBlock">X Block</div>
+      <div class="card" data-i18n="trading">Trading</div>
+      <div class="card" data-i18n="investing">Investing</div>
+      <div class="card" data-i18n="aiAnalysis">AI Analysis</div>
+      <div class="card" data-i18n="automation">Automation</div>
+      <div class="card" data-i18n="communities">Communities</div>
+      <div class="card" data-i18n="projects">Projects</div>
+      <div class="card" data-i18n="zeroBlock">Zero Block</div>
+    </div>
+    <button class="back" onclick="openScreen('domains')" data-i18n="back">BACK</button>
+  </div>
+</section>
+
+<section id="xblock" class="screen">
+  <div class="panel-inner">
+    <div class="panel-title" data-i18n="financeXBlock">Finance / X Block</div>
+    <h2 class="panel-heading" data-i18n="xBlockUpper">X BLOCK</h2>
+    <div class="grid">
+      <div class="card" data-i18n="signals">Signals</div>
+      <div class="card" data-i18n="automation">Automation</div>
+      <div class="card" data-i18n="aiAnalysis">AI Analysis</div>
+      <div class="card" data-i18n="community">Community</div>
+    </div>
+    <p class="note" data-i18n="thirdClick">The third click opens the living block.</p>
+    <button class="back" onclick="openScreen('finance')" data-i18n="back">BACK</button>
+  </div>
+</section>
+
+<script>
+const translations={
+  en:{code:'EN',language:'LANGUAGE',select:'Select Language',subtitle:'Architecture of a Living Digital Civilization',enter:'ENTER',mainDomains:'Main Civilization Domains',chooseWorld:'Choose Your World',finance:'Finance',ai:'AI',art:'Art',business:'Business',education:'Education',culture:'Culture',health:'Health',zeroBlock:'Zero Block',pathNote:'First the world opens. Then the path becomes visible.',financeWorld:'Finance World',financeUpper:'FINANCE',xBlock:'X Block',trading:'Trading',investing:'Investing',aiAnalysis:'AI Analysis',automation:'Automation',communities:'Communities',projects:'Projects',back:'BACK',financeXBlock:'Finance / X Block',xBlockUpper:'X BLOCK',signals:'Signals',community:'Community',thirdClick:'The third click opens the living block.'},
+  lv:{code:'LV',language:'VALODA',select:'Izvēlies valodu',subtitle:'Dzīvās Digitālās Civilizācijas Arhitektūra',enter:'IEIET',mainDomains:'Galvenie Civilizācijas Virzieni',chooseWorld:'Izvēlies Pasauli',finance:'Finanses',ai:'AI',art:'Māksla',business:'Bizness',education:'Izglītība',culture:'Kultūra',health:'Veselība',zeroBlock:'Zero Block',pathNote:'Vispirms atveras pasaule. Tad kļūst redzams ceļš.',financeWorld:'Finanšu Pasaule',financeUpper:'FINANSES',xBlock:'X Bloks',trading:'Tirdzniecība',investing:'Investīcijas',aiAnalysis:'AI Analīze',automation:'Automatizācija',communities:'Kopienas',projects:'Projekti',back:'ATPAKAĻ',financeXBlock:'Finanses / X Bloks',xBlockUpper:'X BLOKS',signals:'Signāli',community:'Kopiena',thirdClick:'Trešais klikšķis atver dzīvo bloku.'},
+  ru:{code:'RU',language:'ЯЗЫК',select:'Выберите язык',subtitle:'Архитектура Живой Цифровой Цивилизации',enter:'ВОЙТИ',mainDomains:'Главные Направления Цивилизации',chooseWorld:'Выберите Мир',finance:'Финансы',ai:'ИИ',art:'Искусство',business:'Бизнес',education:'Образование',culture:'Культура',health:'Здоровье',zeroBlock:'Zero Block',pathNote:'Сначала открывается мир. Затем становится виден путь.',financeWorld:'Мир Финансов',financeUpper:'ФИНАНСЫ',xBlock:'X Block',trading:'Трейдинг',investing:'Инвестиции',aiAnalysis:'ИИ Анализ',automation:'Автоматизация',communities:'Сообщества',projects:'Проекты',back:'НАЗАД',financeXBlock:'Финансы / X Block',xBlockUpper:'X BLOCK',signals:'Сигналы',community:'Сообщество',thirdClick:'Третий клик открывает живой блок.'}
+};
+function openScreen(id){document.querySelectorAll('.screen').forEach(screen=>screen.classList.remove('active'));document.getElementById(id).classList.add('active');}
+function toggleLanguagePanel(){document.getElementById('languagePanel').classList.toggle('active');}
+function setLanguage(lang){const t=translations[lang]||translations.en;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(t[key])el.textContent=t[key];});document.getElementById('languageButton').textContent=t.language+' · '+t.code;document.getElementById('languageTitle').textContent=t.select;document.getElementById('languagePanel').classList.remove('active');localStorage.setItem('synterraLanguage',lang);}
+setLanguage(localStorage.getItem('synterraLanguage')||'en');
+</script>
+</body>
+</html>
