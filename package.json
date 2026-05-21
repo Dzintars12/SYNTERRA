@@ -6,11 +6,13 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "npm run test:runtime && npm run test:agent && npm run test:memory && npm run test:graph",
+    "test": "npm run test:runtime && npm run test:agent && npm run test:memory && npm run test:graph && npm run test:persistent-memory && npm run test:realtime",
     "test:runtime": "tsx tests/core/testSynterraRuntime.ts",
     "test:agent": "tsx tests/core/testSynterraAgent.ts",
     "test:memory": "tsx tests/core/testMemoryUpdateEngine.ts",
-    "test:graph": "tsx tests/core/testCivilizationMemoryGraph.ts"
+    "test:graph": "tsx tests/core/testCivilizationMemoryGraph.ts",
+    "test:persistent-memory": "tsx tests/core/testPersistentMemoryStore.ts",
+    "test:realtime": "tsx tests/core/testRealtimeCollaborationEngine.ts"
   },
   "dependencies": {
     "openai": "latest"
