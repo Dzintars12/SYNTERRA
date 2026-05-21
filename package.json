@@ -5,6 +5,9 @@
   "description": "Unified semantic civilization repository for SYNTERRA",
   "type": "module",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "typecheck": "tsc --noEmit",
     "test": "npm run test:runtime && npm run test:agent && npm run test:memory && npm run test:graph && npm run test:persistent-memory && npm run test:realtime",
     "test:runtime": "tsx tests/core/testSynterraRuntime.ts",
@@ -15,10 +18,15 @@
     "test:realtime": "tsx tests/core/testRealtimeCollaborationEngine.ts"
   },
   "dependencies": {
-    "openai": "latest"
+    "next": "latest",
+    "openai": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "tsx": "latest",
     "typescript": "latest"
   }
