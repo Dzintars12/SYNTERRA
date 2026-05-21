@@ -17,7 +17,7 @@ export interface RunSynterraAgentResult {
   language: string;
   contextInjection: string;
   systemInstruction: string;
- semanticPrompt: string;
+  semanticPrompt: string;
   memoryLayers: string[];
   categories: string[];
   simulatedResponse: string;
