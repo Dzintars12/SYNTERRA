@@ -1,0 +1,49 @@
+{
+  "version": "V1",
+  "date": "20.05.2026",
+  "status": "ACTIVE",
+  "source_repository": "Dzintars12/SYNTERRA-LV",
+  "migration_target": "Dzintars12/SYNTERRA",
+  "terms": [
+    {
+      "lv": "kompilācija",
+      "en": "compilation"
+    },
+    {
+      "lv": "kolektīvā apziņa",
+      "en": "collective consciousness"
+    },
+    {
+      "lv": "radīšanas process",
+      "en": "creation process"
+    },
+    {
+      "lv": "attīstības konstitūcija",
+      "en": "development constitution"
+    },
+    {
+      "lv": "zināšanu bāze",
+      "en": "knowledge base"
+    },
+    {
+      "lv": "daudzvalodu komunikācija",
+      "en": "multilingual communication"
+    },
+    {
+      "lv": "atgriešanas princips",
+      "en": "return principle"
+    },
+    {
+      "lv": "cilvēks",
+      "en": "human being"
+    },
+    {
+      "lv": "civilizācija",
+      "en": "civilization"
+    },
+    {
+      "lv": "sintēze",
+      "en": "synthesis"
+    }
+  ]
+}
