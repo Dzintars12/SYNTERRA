@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { listUsers } from "../../../src/server/userRepository";
+import { listUsers } from "../../../../src/server/userRepository";
 
 export async function GET() {
   const users = await listUsers();
