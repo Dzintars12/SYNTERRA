@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { getProductionDataProviderStatus } from "../../../../../src/server/productionDataProvider";
-import { realtimeConfig } from "../../../../../src/server/realtimeConfig";
+import { getProductionDataProviderStatus } from "../../../../src/server/productionDataProvider";
+import { realtimeConfig } from "../../../../src/server/realtimeConfig";
 
 export async function GET() {
   const providerStatus = getProductionDataProviderStatus();
