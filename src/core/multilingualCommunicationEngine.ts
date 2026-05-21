@@ -14,6 +14,30 @@ export interface MultilingualMessage {
   timestamp: string;
 }
 
+async function translateSemanticContent(
+  content: string,
+  sourceLanguage: SynterraLanguage,
+  targetLanguage: SynterraLanguage
+): Promise<string> {
+  const translationPrompt = [
+    "Translate the following content semantically.",
+    "Preserve meaning, context, tone, and intent.",
+    `Source language: ${sourceLanguage}`,
+    `Target language: ${targetLanguage}`,
+    "",
+    content,
+  ].join("\n");
+
+  const execution = await executeLiveLLM(translationPrompt, {
+    provider: "openai",
+    mode: "translation",
+    language: targetLanguage === "lv" ? "lv" : "en",
+    temperature: 0.2,
+  });
+
+  return execution.response;
+}
+
 export async function createMultilingualMessage(
   authorId: string,
   content: string,
@@ -28,14 +52,11 @@ export async function createMultilingualMessage(
       continue;
     }
 
-    const execution = await executeLiveLLM(content, {
-      provider: "openai",
-      mode: "translation",
-      language,
-      temperature: 0.2,
-    });
-
-    translatedContent[language] = execution.response;
+    translatedContent[language] = await translateSemanticContent(
+      content,
+      sourceLanguage,
+      language
+    );
   }
 
   return {
