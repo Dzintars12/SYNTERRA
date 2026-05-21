@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { runCreationAssistant } from "../../../../src/core/creationAssistantEngine";
+import { runCreationAssistant } from "../../../src/core/creationAssistantEngine";
 
 export async function POST(request: NextRequest) {
   const body = await request.json();
