@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SYNTERRA Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 280px;
+      background: #111827;
+      padding: 24px;
+      border-right: 1px solid #1e293b;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 32px;
+    }
+
+    .nav-section {
+      margin-bottom: 32px;
+    }
+
+    .nav-title {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .nav-item {
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      background: #1e293b;
+      cursor: pointer;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topbar {
+      padding: 20px 32px;
+      border-bottom: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111827;
+    }
+
+    .workspace-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      padding: 32px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1e293b;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      margin-bottom: 18px;
+      font-size: 20px;
+    }
+
+    .workspace-item,
+    .message-item,
+    .project-item {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .status {
+      color: #22c55e;
+      font-size: 14px;
+    }
+
+    .language-tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: #334155;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .chat-box {
+      height: 280px;
+      overflow-y: auto;
+      margin-bottom: 16px;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background: #0f172a;
+      color: white;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">SYNTERRA</div>
+
+    <div class="nav-section">
+      <div class="nav-title">Workspaces</div>
+      <div class="nav-item">Global Creation Hub</div>
+      <div class="nav-item">Civilization Memory Lab</div>
+      <div class="nav-item">AI Collaboration Room</div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-title">Realtime Status</div>
+      <div class="status">● LIVE COLLABORATION ACTIVE</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1>Realtime Creative Collaboration</h1>
+      </div>
+      <div>
+        Human + AI Civilization Platform
+      </div>
+    </div>
+
+    <section class="workspace-grid">
+      <div class="card">
+        <h2>Active Projects</h2>
+
+        <div class="project-item">
+          <strong>SYNTERRA Runtime</strong>
+          <div>Semantic AI Runtime System</div>
+          <div class="language-tag">EN / LV</div>
+        </div>
+
+        <div class="project-item">
+          <strong>Global Translation Layer</strong>
+          <div>Realtime multilingual cognition</div>
+          <div class="language-tag">GLOBAL</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Realtime Multilingual Chat</h2>
+
+        <div class="chat-box">
+          <div class="message-item">
+            <strong>Dzintars:</strong>
+            <div>Mēs būvējam dzīvu sociāli-radošu platformu.</div>
+            <div class="language-tag">LV → EN</div>
+          </div>
+
+          <div class="message-item">
+            <strong>AI:</strong>
+            <div>Realtime semantic collaboration layer active.</div>
+            <div class="language-tag">EN</div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <input placeholder="Write in your language..." />
+          <button>Send</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Collective Memory</h2>
+
+        <div class="workspace-item">
+          <strong>Semantic Memory</strong>
+          <div>Persistent civilization memory active.</div>
+        </div>
+
+        <div class="workspace-item">
+          <strong>Realtime Collaboration</strong>
+          <div>Workspace synchronization enabled.</div>
+        </div>
+
+        <div class="workspace-item">
+          <strong>AI Orchestration</strong>
+          <div>Live OpenAI execution connected.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
