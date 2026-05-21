@@ -1,0 +1,99 @@
+{
+  "version": "V1",
+  "date": "20.05.2026",
+  "status": "FOUNDATION",
+  "source_repository": "Dzintars12/SYNTERRA-LV",
+  "migration_target": "Dzintars12/SYNTERRA",
+  "concepts": [
+    {
+      "id": "SYN_CONCEPT_001",
+      "lv": "kompilācija",
+      "en": "compilation",
+      "category": "philosophy",
+      "definition_lv": "Dzīvs process, kur cilvēka pieredze un zināšanas tiek pārvērstas civilizācijas struktūrā.",
+      "definition_en": "A living process where human experience and knowledge are transformed into civilizational structure.",
+      "related": ["return", "civilization", "memory"]
+    },
+    {
+      "id": "SYN_CONCEPT_002",
+      "lv": "atgriešanas princips",
+      "en": "return principle",
+      "category": "philosophy",
+      "definition_lv": "Princips, kur katra darbība atgriež vērtību civilizācijai.",
+      "definition_en": "A principle where every action returns value to civilization.",
+      "related": ["compilation", "human", "creation"]
+    },
+    {
+      "id": "SYN_CONCEPT_003",
+      "lv": "kolektīvā apziņa",
+      "en": "collective consciousness",
+      "category": "civilization",
+      "definition_lv": "Kopējais cilvēces domu, pieredzes un zināšanu lauks.",
+      "definition_en": "The shared field of humanity's thoughts, experience, and knowledge.",
+      "related": ["civilization", "memory", "communication"]
+    },
+    {
+      "id": "SYN_CONCEPT_004",
+      "lv": "daudzvalodu komunikācija",
+      "en": "multilingual communication",
+      "category": "communication",
+      "definition_lv": "Komunikācija, kur katrs cilvēks izmanto savu valodu, bet saprot citus savā izvēlētajā valodā.",
+      "definition_en": "Communication where each person uses their own language while understanding others in their selected language.",
+      "related": ["translation", "civilization", "knowledge"]
+    },
+    {
+      "id": "SYN_CONCEPT_005",
+      "lv": "zināšanu bāze",
+      "en": "knowledge base",
+      "category": "knowledge",
+      "definition_lv": "Strukturēta sistēma cilvēka un AI radīto zināšanu saglabāšanai.",
+      "definition_en": "A structured system for preserving human and AI generated knowledge.",
+      "related": ["memory", "AI", "documentation"]
+    },
+    {
+      "id": "SYN_CONCEPT_006",
+      "lv": "dokumentācija",
+      "en": "documentation",
+      "category": "system",
+      "definition_lv": "Sistēmas atmiņas un attīstības pieraksts.",
+      "definition_en": "The written memory and development record of the system.",
+      "related": ["audit", "timeline", "knowledge"]
+    },
+    {
+      "id": "SYN_CONCEPT_007",
+      "lv": "cilvēks",
+      "en": "human being",
+      "category": "humanity",
+      "definition_lv": "SYNTERRA sistēmas centrālais radīšanas punkts.",
+      "definition_en": "The central creation point of the SYNTERRA system.",
+      "related": ["AI", "civilization", "creation"]
+    },
+    {
+      "id": "SYN_CONCEPT_008",
+      "lv": "mākslīgais intelekts",
+      "en": "artificial intelligence",
+      "category": "AI",
+      "definition_lv": "Strukturējošs instruments, kas palīdz cilvēkam organizēt zināšanas un radīšanu.",
+      "definition_en": "A structuring instrument that helps humans organize knowledge and creation.",
+      "related": ["human", "knowledge", "documentation"]
+    },
+    {
+      "id": "SYN_CONCEPT_009",
+      "lv": "civilizācija",
+      "en": "civilization",
+      "category": "civilization",
+      "definition_lv": "Kopējais cilvēces darbības, valodas, tehnoloģijas un radīšanas lauks.",
+      "definition_en": "The shared field of human activity, language, technology, and creation.",
+      "related": ["collective consciousness", "communication", "memory"]
+    },
+    {
+      "id": "SYN_CONCEPT_010",
+      "lv": "atmiņa",
+      "en": "memory",
+      "category": "knowledge",
+      "definition_lv": "Sistēma, kas saglabā pieredzi, zināšanas un attīstības vēsturi.",
+      "definition_en": "A system that preserves experience, knowledge, and development history.",
+      "related": ["knowledge base", "documentation", "timeline"]
+    }
+  ]
+}
