@@ -5,12 +5,15 @@
   "description": "Unified semantic civilization repository for SYNTERRA",
   "type": "module",
   "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "npm run test:runtime && npm run test:agent && npm run test:memory && npm run test:graph",
     "test:runtime": "tsx tests/core/testSynterraRuntime.ts",
     "test:agent": "tsx tests/core/testSynterraAgent.ts",
     "test:memory": "tsx tests/core/testMemoryUpdateEngine.ts",
     "test:graph": "tsx tests/core/testCivilizationMemoryGraph.ts"
   },
   "devDependencies": {
+    "@types/node": "latest",
     "tsx": "latest",
     "typescript": "latest"
   }
