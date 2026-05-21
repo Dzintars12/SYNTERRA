@@ -19,7 +19,7 @@ export async function upsertSemanticVector(input: {
   content: string;
   categories?: string[];
 }): Promise<SemanticVectorRecord> {
-  const embedding = await generateEmbedding(input.content);
+  const embeddingResult = await generateEmbedding(input.content);
 
   const record: SemanticVectorRecord = {
     id: input.id,
@@ -27,7 +27,7 @@ export async function upsertSemanticVector(input: {
     title: input.title,
     content: input.content,
     categories: input.categories ?? [],
-    embedding: embedding.embedding,
+    embedding: embeddingResult.embedding,
     createdAt: new Date().toISOString(),
   };
 
