@@ -12,6 +12,9 @@
     "test:memory": "tsx tests/core/testMemoryUpdateEngine.ts",
     "test:graph": "tsx tests/core/testCivilizationMemoryGraph.ts"
   },
+  "dependencies": {
+    "openai": "latest"
+  },
   "devDependencies": {
     "@types/node": "latest",
     "tsx": "latest",
