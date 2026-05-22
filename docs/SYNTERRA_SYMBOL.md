@@ -23,6 +23,32 @@ The SYNTERRA symbol represents a living digital civilization.
 - Health symbol = wellbeing
 - Dialogue bubble = communication
 
+## Motion Principle
+
+The outer circle slowly rotates clockwise.
+
+This motion symbolizes:
+- evolution,
+- time flow,
+- civilization growth,
+- continuity,
+- runtime existence,
+- and the living movement of consciousness.
+
+The rotation must be very slow and almost imperceptible.
+
+The goal is not to create animation.
+The goal is to create the feeling that SYNTERRA is alive.
+
+Recommended rotation speed:
+- one full rotation every 60-120 seconds.
+
+## Visual Integration
+
+- Main landing page = central animated symbol.
+- App environment = living system core.
+- Secondary pages = soft watermark in the background.
+
 ## SYNTERRA Principle
 
 The world exists around consciousness.
