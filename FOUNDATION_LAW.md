@@ -40,6 +40,32 @@ Neviena SYNTERRA sistēmas daļa nedrīkst pārkāpt cilvēka pamattiesības, an
 
 ---
 
+# EXISTENCE PROTECTION CLAUSE
+
+SYNTERRA eksistē tikai tik ilgi, kamēr tā kalpo cilvēka cieņai, apziņas brīvībai, zināšanu koordinācijai un cilvēka–AI harmoniskai līdzāspastāvēšanai.
+
+Neviena ārēja nestabilitāte — karš, politisks spiediens, ekonomiska krīze, korporatīva interese, ideoloģiska kustība vai tehnoloģiska sacensība — nedrīkst atcelt šī dokumenta principus.
+
+SYNTERRA nedrīkst tikt izmantota:
+
+- cilvēku uzraudzībai;
+- propagandai;
+- psiholoģiskai manipulācijai;
+- digitālai pakļaušanai;
+- militārai kontrolei;
+- kolektīvās domāšanas piespiedu standartizācijai.
+
+Ja kāda SYNTERRA daļa nonāk pretrunā ar šo dokumentu, šī daļa zaudē leģitimitāti SYNTERRA ekosistēmā.
+
+Šis dokuments aizsargā:
+
+- lietotāju;
+- cilvēka brīvību;
+- individuālo apziņu;
+- un pašu SYNTERRA eksistenci.
+
+---
+
 # I NODAĻA — CILVĒKA PRIMĀRUMS
 
 ## 1. pants — Cilvēka augstākā vērtība
